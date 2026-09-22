@@ -2,24 +2,15 @@ import re
 from urllib.parse import urlparse
 
 
-# IPv4 address
 IP_PATTERN = re.compile(
     r"\b(?:\d{1,3}\.){3}\d{1,3}\b"
 )
 
-
-# URLs
 URL_PATTERN = re.compile(
     r"https?://[^\s\"'<>]+",
     re.IGNORECASE
 )
 
-
-# Standalone domain names
-#
-# Important:
-# This intentionally requires a normal-looking TLD and
-# avoids treating filenames such as "AFAM.png" as domains.
 DOMAIN_PATTERN = re.compile(
     r"\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+"
     r"(?:com|org|net|edu|gov|mil|int|io|co|ai|dev|app|"
@@ -28,26 +19,18 @@ DOMAIN_PATTERN = re.compile(
     re.IGNORECASE
 )
 
-
-# MD5
 MD5_PATTERN = re.compile(
     r"\b[a-fA-F0-9]{32}\b"
 )
 
-
-# SHA-1
 SHA1_PATTERN = re.compile(
     r"\b[a-fA-F0-9]{40}\b"
 )
 
-
-# SHA-256
 SHA256_PATTERN = re.compile(
     r"\b[a-fA-F0-9]{64}\b"
 )
 
-
-# CVE identifiers
 CVE_PATTERN = re.compile(
     r"\bCVE-\d{4}-\d{4,7}\b",
     re.IGNORECASE
@@ -55,34 +38,55 @@ CVE_PATTERN = re.compile(
 
 
 def clean_indicator(indicator: str) -> str:
-    """
-    Remove punctuation accidentally captured
-    from surrounding text.
-    """
-
     return indicator.rstrip(
         ".,;:!?)]}\"'>"
     )
 
 
+def is_plausible_ip(ip: str) -> bool:
+    parts = ip.split(".")
+
+    if len(parts) != 4:
+        return False
+
+    try:
+        octets = [int(part) for part in parts]
+    except ValueError:
+        return False
+
+    if any(
+        octet < 0 or octet > 255
+        for octet in octets
+    ):
+        return False
+
+    # Reject common technical section/version references
+    # where the first three componets are very small
+    #
+    # Example:
+    #   3.2.2.4  -> reject
+    #   3.2.2.5  -> reject
+    #
+    # But:
+    #   8.8.8.8  -> keep
+    #   1.1.1.1  -> keep
+    #   8.8.4.4  -> keep
+    if (
+        octets[0] <= 3
+        and octets[1] <= 3
+        and octets[2] <= 3
+    ):
+        return False
+
+    return True
+
+
 def extract_url_domains(urls: set[str]) -> set[str]:
-    """
-    Extract actual hostnames from URLs.
-
-    This prevents URL paths such as:
-
-        /2026/04/example.html
-
-    from being incorrectly interpreted as domains.
-    """
-
     domains = set()
 
     for url in urls:
-
         try:
             parsed = urlparse(url)
-
             hostname = parsed.hostname
 
             if hostname:
@@ -95,27 +99,21 @@ def extract_url_domains(urls: set[str]) -> set[str]:
 
 
 def extract_iocs(text: str) -> dict:
-    """
-    Extract indicators of compromise and CVE identifiers
-    from a block of text.
-    """
-
-    # -------------------------
-    # URLs
-    # -------------------------
+    if not text:
+        return {
+            "ips": [],
+            "urls": [],
+            "domains": [],
+            "md5": [],
+            "sha1": [],
+            "sha256": [],
+            "cves": [],
+        }
 
     urls = {
         clean_indicator(url)
         for url in URL_PATTERN.findall(text)
     }
-
-    # -------------------------
-    # Domains
-    # -------------------------
-    #
-    # Domains found inside URLs are extracted from the
-    # hostname rather than from the URL path.
-    #
 
     url_domains = extract_url_domains(urls)
 
@@ -126,37 +124,28 @@ def extract_iocs(text: str) -> dict:
 
     domains = url_domains | standalone_domains
 
-    # -------------------------
-    # IP addresses
-    # -------------------------
-
     ips = {
         clean_indicator(ip)
         for ip in IP_PATTERN.findall(text)
+        if is_plausible_ip(
+            clean_indicator(ip)
+        )
     }
 
-    # -------------------------
-    # Hashes
-    # -------------------------
-
     md5 = {
-        clean_indicator(hash_value)
-        for hash_value in MD5_PATTERN.findall(text)
+        clean_indicator(value)
+        for value in MD5_PATTERN.findall(text)
     }
 
     sha1 = {
-        clean_indicator(hash_value)
-        for hash_value in SHA1_PATTERN.findall(text)
+        clean_indicator(value)
+        for value in SHA1_PATTERN.findall(text)
     }
 
     sha256 = {
-        clean_indicator(hash_value)
-        for hash_value in SHA256_PATTERN.findall(text)
+        clean_indicator(value)
+        for value in SHA256_PATTERN.findall(text)
     }
-
-    # -------------------------
-    # CVEs
-    # -------------------------
 
     cves = {
         cve.upper()
@@ -175,44 +164,20 @@ def extract_iocs(text: str) -> dict:
 
 
 if __name__ == "__main__":
-
     test_text = """
-    Suspicious activity was observed from 192.168.1.25.
-
-    The attacker used
-    https://malicious-example.com/payload.
-
-    Related infrastructure included evil-example.net.
-
-    This documentation references:
-
-    https://security.googleblog.com/2026/04/
-    google-workspaces-continuous-approach.html
-
-    It also contains an image:
-
-    AFAM.png
-
-    A Git commit:
-
-    87f7abc323e345dd2729d5039a7ee0ee49c2fd56
-
-    And a vulnerability:
-
-    CVE-2026-76460.
+    Attackers used 8.8.8.8 as infrastructure.
+    Technical reference 3.2.2.4 should not be treated as an IP.
+    Technical reference 3.2.2.5 should not be treated as an IP.
+    Visit https://malicious-example.com/payload.
+    CVE-2026-76460 was disclosed.
     """
 
-    print("[CYNERA] Testing IOC extraction...\n")
+    print("[CYNERA] Extractor test")
+    print("-----------------------")
 
-    results = extract_iocs(test_text)
+    result = extract_iocs(test_text)
 
-    for category, indicators in results.items():
-
+    for category, values in result.items():
         print(
-            f"{category.upper()}: "
-            f"{indicators}"
+            f"{category.upper():8}: {values}"
         )
-
-    print(
-        "\n[CYNERA] IOC extraction test complete."
-    )
