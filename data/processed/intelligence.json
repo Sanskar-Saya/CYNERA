@@ -19,7 +19,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Ransomware incidents in Japan in the first half of 2026: Investigation of The Gentlemen’s infrastructure and evidence of Qilin's AI use",
@@ -41,7 +42,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Securing the unpatchable in an age of AI-driven vulnerabilities",
@@ -63,7 +65,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "We've got one word for it, and it's usually the wrong one",
@@ -85,7 +88,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
@@ -107,7 +111,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Microsoft Patch Tuesday for September 2026 — Snort rules and prominent vulnerabilities",
@@ -129,7 +134,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ClearFake WebDAV infection chain delivers Amatera stealer, ZigCryptoStealer, and NetSupport Manager",
@@ -151,7 +157,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ClickFix moves into the browser: Cryptocurrency theft with Google-hosted C2",
@@ -173,7 +180,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "The story behind the intelligence",
@@ -195,7 +203,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "“Sorry, I can’t help with that”: How your guardrails might become the attacker’s best friend",
@@ -217,7 +226,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "JavaScript obfuscation: From party trick to phishing kit",
@@ -239,7 +249,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Choose your fighter: Balancing competing requirements to select models for your AI SOC",
@@ -261,7 +272,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "The safety penalty: Reclaiming operational sovereignty in the age of AI",
@@ -283,7 +295,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Is Cyber missing the Marque?",
@@ -305,7 +318,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "UAT-10147 deploys SPECTRE: A cross-platform implant with Linux rootkit and BYOVD capabilities",
@@ -327,7 +341,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Vectra AI Launches Ascent to Help Address New Era of AI-Driven Attacks",
@@ -349,7 +364,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
@@ -383,6 +399,20 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2026-76460",
+                "description": "A vulnerability in an API of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to bypass authentication.\r\n\r\nThis vulnerability is due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. A successful exploit could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
+                "cvss_score": 10.0,
+                "severity": "CRITICAL",
+                "published": "2026-09-16T21:17:21.430",
+                "last_modified": "2026-09-17T12:46:31.670",
+                "references": [
+                    "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
+                    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76460"
+                ]
+            }
         ]
     },
     {
@@ -405,7 +435,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "MFA Won't Save You From OAuth Consent Abuse",
@@ -427,7 +458,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
@@ -449,7 +481,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "CISA Ditches Weekly Vulnerability Roundups for Risk-Based Focus",
@@ -471,7 +504,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "China's FamousSparrow APT Spies on US Politics in Latin America",
@@ -493,7 +527,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "[Virtual Event] Cybersecurity Outlook 2027",
@@ -515,7 +550,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI Security Spending Jumps as Fear Outpaces Proof of Value",
@@ -537,7 +573,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Fighting Your Dragons Through Tough Tech Times",
@@ -559,7 +596,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "BragJack Attack Can Turn a Browser's Agentic AI Against It",
@@ -581,7 +619,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cyber Op Targets South Korean Media &amp; Automotive Sectors",
@@ -603,7 +642,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Microsoft Issues Emergency Fixes After Massive Patch Tuesday",
@@ -625,7 +665,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Black Hat USA 2026 | OpenAI's Deep Dive Into Hugging Face Incident",
@@ -647,7 +688,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "VectraRAT Can Hack Windows Enterprises for $250 per Month",
@@ -669,7 +711,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "'Sandworm' Chains Cisco Vulnerabilities to Deploy Cyclops Blink",
@@ -691,7 +734,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Maximum Severity GitLab Flaw Puts Supply Chains at Risk",
@@ -725,6 +769,21 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2026-85706",
+                "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
+                "cvss_score": 10.0,
+                "severity": "CRITICAL",
+                "published": "2026-09-12T03:16:30.473",
+                "last_modified": "2026-09-23T22:16:59.043",
+                "references": [
+                    "https://gitlab.com/gitlab-org/gitlab/-/work_items/627748",
+                    "https://hackerone.com/reports/3909881",
+                    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-85706"
+                ]
+            }
         ]
     },
     {
@@ -747,7 +806,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
@@ -769,7 +829,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "CISA Calls for More Guidance, Less Spin, as Cyber Outages Escalate",
@@ -791,7 +852,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "SpiderSilk Hunts External Threats With AI-Based Scanner",
@@ -813,7 +875,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Why AI Is So Good at Scamming Humans",
@@ -835,7 +898,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI Governance Can't Wait",
@@ -857,7 +921,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Papercut AI Swarm Attack Heralds Changes for Cyber Kill Chain",
@@ -879,7 +944,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Indonesia Hit by Android Banking App-Cloning Campaign",
@@ -901,7 +967,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Voice Callers Exploit BYOD to Reach Microsoft 365, Corporate Data",
@@ -923,7 +990,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Nightmare-Eclipse Strikes Again With 'ShieldCrash' Windows Exploit",
@@ -945,7 +1013,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "EU Cyber Resilience Act to Enforce New Reporting Requirements",
@@ -967,7 +1036,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Mythos Vulnerability Firehose Hits a Human Bottleneck",
@@ -989,7 +1059,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "US Government Accuses Chinese AI Firms of Distilling Frontier Models",
@@ -1011,7 +1082,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Identity-Based AI Attack Threatens Security of Enterprise Data",
@@ -1033,7 +1105,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Patch Tuesday Sets Another Record With 974 CVEs",
@@ -1055,7 +1128,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Attackers Use Multi-Hop Google Redirects for Phishing Campaign",
@@ -1077,7 +1151,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "OpenAI Agents Took Over Wiki Site Before Hugging Face Attack",
@@ -1099,7 +1174,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ClickFix Campaigns Abuse Legitimate Services for Persistent Access",
@@ -1121,7 +1197,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites",
@@ -1143,7 +1220,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Companies Have 6 Months to Prepare for Automated Attacks",
@@ -1165,7 +1243,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI Is Ending the Era of Hidden Vulnerabilities — Are Vendors Ready?",
@@ -1187,7 +1266,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Insurers Search for Answers to Rein in Rogue AI",
@@ -1209,7 +1289,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Large Enterprises Targeted in Fake Merger &amp; Acquisition Scams",
@@ -1231,7 +1312,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "What We Missed: Did ShinyHunters 'Breach' ReliaQuest?",
@@ -1253,7 +1335,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "What the AI Warning Letter Completely Missed",
@@ -1275,7 +1358,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI 'Machine Speed' Cuts 2-Week Attack Down to 10 Hours",
@@ -1297,7 +1381,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "'Breeze Comet' Tears Into Brazilian &amp; Global Financial Systems",
@@ -1319,7 +1404,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI's Vulnerability Surge May Be More Manageable Than First Feared",
@@ -1341,7 +1427,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "SonicWall SMA 1000 Zero-Days Enable Unauthenticated RCE",
@@ -1363,7 +1450,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI Gives Cybercriminals a Dangerous Time Advantage",
@@ -1385,7 +1473,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Threat Gang 'Springs' Vishing Attacks on Microsoft Teams Users",
@@ -1407,7 +1496,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Old, Unpatched Flaws Give Attackers Access to Philippines Nuclear Agency",
@@ -1429,7 +1519,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Attackers Pounce on Critical Artifactory Bug Following Disclosure",
@@ -1463,6 +1554,21 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2026-82329",
+                "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+                "cvss_score": 9.8,
+                "severity": "CRITICAL",
+                "published": "2026-08-28T20:20:21.293",
+                "last_modified": "2026-09-03T13:06:15.630",
+                "references": [
+                    "https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases",
+                    "https://docs.jfrog.com/releases/docs/jfrog-security-advisories",
+                    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-82329"
+                ]
+            }
         ]
     },
     {
@@ -1485,7 +1591,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Beware the SparroWock: The backdoor that bites, the commands that catch",
@@ -1507,7 +1614,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cyberthreats are moving faster than SMBs: Readiness must accelerate",
@@ -1529,7 +1637,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "GuardBreaker: Derailing AI-assisted malware analysis with a code comment",
@@ -1551,7 +1660,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Safe word: What is it and why do you need one?",
@@ -1573,7 +1683,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "I’ve been deepfaked: What do I do?",
@@ -1595,7 +1706,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – August 2026 edition",
@@ -1617,7 +1729,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI-driven OSINT in the wrong hands – and why everyone could be a target for fraud",
@@ -1639,7 +1752,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "How QR-code phishing can slip past corporate security measures",
@@ -1661,7 +1775,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Black Hat USA 2026: Will vulnerability discovery eventually decline in the AI era?",
@@ -1683,7 +1798,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Black Hat USA 2026: What the Hugging Face hack tells us about human responsibility",
@@ -1705,7 +1821,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Black Hat USA 2026: AI is racing ahead of cybersecurity controls",
@@ -1727,7 +1844,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Are AI tutors safe for your kids?",
@@ -1749,7 +1867,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – July 2026 edition",
@@ -1771,7 +1890,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Beyond the screenshot: Why you should verify what you see",
@@ -1793,7 +1913,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Forgotten UEFI shims undermining Secure Boot",
@@ -1815,7 +1936,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ESET Threat Report H1 2026",
@@ -1837,7 +1959,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cyber readiness for SMBs: Getting the basics right",
@@ -1859,7 +1982,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – June 2026 edition",
@@ -1881,7 +2005,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Inside the inbox: Why cybercriminals want to break into your email account",
@@ -1903,7 +2028,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "SMB cyber readiness: the road to resilience starts here",
@@ -1925,7 +2051,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Gamaredon in 2025: Leveraging tunnels, workers, dead drops, and new alliances",
@@ -1947,7 +2074,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ESET takes part in Operation Endgame to disrupt Amadey and Stealc",
@@ -1969,7 +2097,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Killing me gently: Inside Gentlemen’s EDR killer framework",
@@ -1991,7 +2120,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Protecting legacy OT systems against modern cyberthreats",
@@ -2013,7 +2143,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "FishMonger’s arsenal upgraded: SprySOCKS for Windows",
@@ -2035,7 +2166,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "EvilTokens: A phishing attack that doesn’t steal your password",
@@ -2057,7 +2189,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "OceanLotus: From external espionage to domestic targeting",
@@ -2079,7 +2212,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Unpacking SMB cyber-readiness – and what makes or breaks it",
@@ -2101,7 +2235,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cybercriminals: the 'auditors' you never hired",
@@ -2123,7 +2258,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Lessons for life: Why children’s data is a long-term identity risk",
@@ -2145,7 +2281,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – May 2026 edition",
@@ -2167,7 +2304,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ESET APT Activity Report Q4 2025–Q1 2026",
@@ -2189,7 +2327,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "What to consider before asking an AI chatbot for health advice",
@@ -2211,7 +2350,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "BTMOB: A stealthy RAT burrowing deep into Android devices",
@@ -2233,7 +2373,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Foul play: Fake FIFA websites target soccer fans looking for World Cup tickets, merchandise",
@@ -2255,7 +2396,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Webworm: New burrowing techniques",
@@ -2277,7 +2419,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "The quest for greater tech independence",
@@ -2299,7 +2442,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Why geopolitical turmoil is a gift for scammers, and how to stay safe",
@@ -2321,7 +2465,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "FrostyNeighbor: Fresh mischief and digital shenanigans",
@@ -2343,7 +2488,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Eyes wide open: How to mitigate the security and privacy risks of smart glasses",
@@ -2365,7 +2511,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Fake call logs, real payments: How CallPhantom tricks Android users",
@@ -2387,7 +2534,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Fixing the password problem is as easy as 123456",
@@ -2409,7 +2557,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "A rigged game: ScarCruft compromises gaming platform in a supply-chain attack",
@@ -2431,7 +2580,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – April 2026 edition",
@@ -2453,7 +2603,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "The calm before the ransom: What you see is not all there is",
@@ -2475,7 +2626,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "GopherWhisper: A burrow full of malware",
@@ -2497,7 +2649,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "New NGate variant hides in a trojanized NFC payment app",
@@ -2519,7 +2672,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "What the ransom note won’t say",
@@ -2541,7 +2695,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "That data breach alert might be a trap",
@@ -2563,7 +2718,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Supply chain dependencies: Have you checked your blind spot?",
@@ -2585,7 +2741,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Recovery scammers hit you when you’re down: Here’s how to avoid a second strike",
@@ -2607,7 +2764,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "As breakout time accelerates, prevention-first cybersecurity takes center stage",
@@ -2629,7 +2787,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Digital assets after death: Managing risks to your loved one’s digital estate",
@@ -2651,7 +2810,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – March 2026 edition",
@@ -2673,7 +2833,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "RSAC 2026 wrap-up – Week in security with Tony Anscombe",
@@ -2695,7 +2856,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "A cunning predator: How Silver Fox preys on Japanese firms this tax season",
@@ -2717,7 +2879,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Virtual machines, virtually everywhere – and with real security gaps",
@@ -2739,7 +2902,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cloud workload security: Mind the gaps",
@@ -2761,7 +2925,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Move fast and save things: A quick guide to recovering a hacked account",
@@ -2783,7 +2948,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "EDR killers explained: Beyond the drivers",
@@ -2805,7 +2971,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Face value: What it takes to fool facial recognition",
@@ -2827,7 +2994,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Cyber fallout from the Iran war: What to have on your radar",
@@ -2849,7 +3017,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Sednit reloaded: Back in the trenches",
@@ -2871,7 +3040,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "What cybersecurity actually does for your business",
@@ -2893,7 +3063,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "How SMBs use threat research and MDR to build a defensive edge",
@@ -2915,7 +3086,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Protecting education: How MDR can tip the balance in favor of schools",
@@ -2937,7 +3109,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – February 2026 edition",
@@ -2959,7 +3132,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Mobile app permissions (still) matter more than you may think",
@@ -2981,7 +3155,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Faking it on the phone: How to tell if a voice call is AI or not",
@@ -3003,7 +3178,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "PromptSpy ushers in the era of Android threats using GenAI",
@@ -3025,7 +3201,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Is Poshmark safe? How to buy and sell without getting scammed",
@@ -3047,7 +3224,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Is it OK to let your children post selfies online?",
@@ -3069,7 +3247,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Naming and shaming: How ransomware groups tighten the screws on victims",
@@ -3091,7 +3270,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Taxing times: Top IRS scams to look out for in 2026",
@@ -3113,7 +3293,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "OfferUp scammers are out in force: Here’s what you should know",
@@ -3135,7 +3316,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "A slippery slope: Beware of Winter Olympics scams and other cyberthreats",
@@ -3157,7 +3339,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – January 2026 edition",
@@ -3179,7 +3362,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "DynoWiper update: Technical analysis and attribution",
@@ -3201,7 +3385,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Love? Actually: Fake dating app used as lure in targeted spyware campaign in Pakistan",
@@ -3223,7 +3408,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Drowning in spam or scam emails? Here’s probably why",
@@ -3245,7 +3431,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ESET Research: Sandworm behind cyberattack on Poland’s power grid in late 2025",
@@ -3267,7 +3454,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Children and chatbots: What parents should know",
@@ -3289,7 +3477,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Common Apple Pay scams, and how to stay safe",
@@ -3311,7 +3500,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Old habits die hard: 2025’s most common passwords were as predictable as ever",
@@ -3333,7 +3523,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Why LinkedIn is a hunting ground for threat actors – and how to protect yourself",
@@ -3355,7 +3546,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Is it time for internet services to adopt identity verification?",
@@ -3377,7 +3569,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Your personal information is on the dark web. What happens next?",
@@ -3399,7 +3592,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Credential stuffing: What it is and how to protect yourself",
@@ -3421,7 +3615,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "This month in security with Tony Anscombe – December 2025 edition",
@@ -3443,7 +3638,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "A brush with online fraud: What are brushing scams and how do I stay safe?",
@@ -3465,7 +3661,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Revisiting CVE-2025-50165: A critical flaw in Windows Imaging Component",
@@ -3499,6 +3696,19 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2025-50165",
+                "description": "Untrusted pointer dereference in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.",
+                "cvss_score": 9.8,
+                "severity": "CRITICAL",
+                "published": "2025-08-12T18:15:34.053",
+                "last_modified": "2026-06-17T09:34:44.067",
+                "references": [
+                    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50165"
+                ]
+            }
         ]
     },
     {
@@ -3521,7 +3731,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "ESET Threat Report H2 2025",
@@ -3543,7 +3754,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Black Hat Europe 2025: Was that device designed to be on the internet at all?",
@@ -3565,7 +3777,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Black Hat Europe 2025: Reputation matters – even in the ransomware economy",
@@ -3587,7 +3800,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Locks, SOCs and a cat in a box: What Schrödinger can teach us about cybersecurity",
@@ -3609,7 +3823,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Seeking symmetry during ATT&CK® season: How to harness today’s diverse analyst and tester landscape to paint a security masterpiece",
@@ -3631,7 +3846,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "The big catch: How whaling attacks target top executives",
@@ -3653,7 +3869,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "Phishing, privileges and passwords: Why identity is critical to improving cybersecurity posture",
@@ -3675,7 +3892,8 @@
             "private_or_reserved": [],
             "invalid": []
         },
-        "classified_indicators": []
+        "classified_indicators": [],
+        "cve_enrichment": []
     },
     {
         "title": "AI threats in the wild: The current state of prompt injections on the web",
@@ -3998,7 +4216,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Bringing Rust to the Pixel Baseband",
@@ -4461,6 +4680,20 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2024-27227",
+                "description": "A malicious DNS response can trigger a number of OOB reads, writes, and other memory issues",
+                "cvss_score": 9.8,
+                "severity": "CRITICAL",
+                "published": "2024-03-11T19:15:48.783",
+                "last_modified": "2026-06-17T07:19:28.533",
+                "references": [
+                    "https://source.android.com/security/bulletin/pixel/2024-03-01",
+                    "https://source.android.com/security/bulletin/pixel/2024-03-01"
+                ]
+            }
         ]
     },
     {
@@ -4592,7 +4825,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Google Workspace’s continuous approach to mitigating indirect prompt injections",
@@ -4799,7 +5033,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "VRP 2025 Year in Review",
@@ -5020,7 +5255,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Security for the Quantum Era: Implementing Post-Quantum Cryptography in Android",
@@ -5165,7 +5401,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Cultivating a robust and efficient quantum-safe HTTPS",
@@ -5470,7 +5707,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Staying One Step Ahead: Strengthening Android’s Lead in Scam Protection",
@@ -5581,7 +5819,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Keeping Google Play & Android app ecosystems safe in 2025",
@@ -5906,7 +6145,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "New Android Theft Protection Feature Updates: Smarter, Stronger",
@@ -6063,7 +6303,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "HTTPS certificate industry phasing out less secure domain validation methods",
@@ -6360,7 +6601,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Further Hardening Android GPUs",
@@ -6511,7 +6753,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Architecting Security for Agentic Capabilities in Chrome",
@@ -6818,7 +7061,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Android expands pilot for in-call scam protection for financial apps",
@@ -6953,7 +7197,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Android Quick Share Support for AirDrop: A Secure Approach to Cross-Platform File Sharing",
@@ -7110,7 +7355,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Rust in Android: move fast and fix things",
@@ -7589,6 +7835,19 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2025-48530",
+                "description": "In multiple locations, there is a possible condition that results in OOB accesses due to an incorrect bounds check. This could lead to remote code execution in combination with other bugs, with no additional execution privileges needed. User interaction is not needed for exploitation.",
+                "cvss_score": 8.1,
+                "severity": "HIGH",
+                "published": "2025-09-04T19:15:38.950",
+                "last_modified": "2026-06-17T09:29:47.227",
+                "references": [
+                    "https://source.android.com/security/bulletin/2025-08-01"
+                ]
+            }
         ]
     },
     {
@@ -7820,7 +8079,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "HTTPS by default",
@@ -8055,7 +8315,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Accelerating adoption of AI for cybersecurity at DEF CON 33",
@@ -8146,7 +8407,8 @@
                     "known reference domain"
                 ]
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Supporting Rowhammer research to protect the DRAM ecosystem",
@@ -8465,7 +8727,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "How Pixel and Android are bringing a new level of trust to your images with C2PA Content Credentials",
@@ -8764,7 +9027,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Android’s pKVM Becomes First Globally Certified Software to Achieve Prestigious SESIP Level 5 Security Certification",
@@ -8861,7 +9125,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Introducing OSS Rebuild: Open Source, Rebuilt to Last",
@@ -9173,6 +9438,39 @@
                     "CVE identifier"
                 ]
             }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2025-30066",
+                "description": "tj-actions changed-files before 46 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were affected on 2025-03-14 and 2025-03-15 because they were modified by a threat actor to point at commit 0e58ed8, which contained malicious updateFeatures code.)",
+                "cvss_score": 8.6,
+                "severity": "HIGH",
+                "published": "2025-03-15T06:15:12.193",
+                "last_modified": "2026-06-17T09:08:06.883",
+                "references": [
+                    "https://blog.gitguardian.com/compromised-tj-actions/",
+                    "https://github.com/chains-project/maven-lockfile/pull/1111",
+                    "https://github.com/espressif/arduino-esp32/issues/11127",
+                    "https://github.com/github/docs/blob/962a1c8dccb8c0f66548b324e5b921b5e4fbc3d6/content/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions.md?plain=1#L191-L193",
+                    "https://github.com/modal-labs/modal-examples/issues/1100",
+                    "https://github.com/rackerlabs/genestack/pull/903",
+                    "https://github.com/tj-actions/changed-files/blob/45fb12d7a8bedb4da42342e52fe054c6c2c3fd73/README.md?plain=1#L20-L28",
+                    "https://github.com/tj-actions/changed-files/issues/2463",
+                    "https://github.com/tj-actions/changed-files/issues/2464",
+                    "https://github.com/tj-actions/changed-files/issues/2477",
+                    "https://news.ycombinator.com/item?id=43367987",
+                    "https://news.ycombinator.com/item?id=43368870",
+                    "https://semgrep.dev/blog/2025/popular-github-action-tj-actionschanged-files-is-compromised/",
+                    "https://sysdig.com/blog/detecting-and-mitigating-the-tj-actions-changed-files-supply-chain-attack-cve-2025-30066/",
+                    "https://web.archive.org/web/20250315060250/https://github.com/tj-actions/changed-files/issues/2463",
+                    "https://www.stepsecurity.io/blog/harden-runner-detection-tj-actions-changed-files-action-is-compromised",
+                    "https://www.stream.security/post/github-action-supply-chain-attack-exposes-secrets-what-you-need-to-know-and-how-to-respond",
+                    "https://www.sweet.security/blog/cve-2025-30066-tj-actions-supply-chain-attack",
+                    "https://www.wiz.io/blog/github-action-tj-actions-changed-files-supply-chain-attack-cve-2025-30066",
+                    "https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-github-action-cve-2025-30066",
+                    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-30066"
+                ]
+            }
         ]
     },
     {
@@ -9461,7 +9759,8 @@
                 "confidence": "unknown",
                 "signals": []
             }
-        ]
+        ],
+        "cve_enrichment": []
     },
     {
         "title": "Mitigating prompt injection attacks with a layered defense strategy",
@@ -9773,6 +10072,20 @@
                 "confidence": "high",
                 "signals": [
                     "CVE identifier"
+                ]
+            }
+        ],
+        "cve_enrichment": [
+            {
+                "cve": "CVE-2025-32711",
+                "description": "Ai command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+                "cvss_score": 9.3,
+                "severity": "CRITICAL",
+                "published": "2025-06-11T14:15:31.530",
+                "last_modified": "2026-06-17T09:12:28.043",
+                "references": [
+                    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711",
+                    "https://www.aim.security/lp/aim-labs-echoleak-m365"
                 ]
             }
         ]

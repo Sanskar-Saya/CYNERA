@@ -4,6 +4,7 @@ from pathlib import Path
 from app.processors.extractor import extract_iocs
 from app.processors.validator import validate_iocs
 from app.processors.classifier import classify_indicators
+from app.intelligence.cve_enricher import enrich_cve
 
 
 INPUT_FILE = Path("data/raw/articles.json")
@@ -46,6 +47,10 @@ def process_articles():
     }
 
     classification_counts = {}
+
+    # Track enrichment statistics
+    enriched_cves = 0
+    enrichment_failures = 0
 
     for article in articles:
 
@@ -100,23 +105,52 @@ def process_articles():
             )
 
         # -------------------------
+        # CVE enrichment
+        # -------------------------
+
+        cve_enrichment = []
+
+        for cve in validated_iocs.get(
+            "cves",
+            []
+        ):
+
+            enrichment = enrich_cve(cve)
+
+            if enrichment:
+
+                cve_enrichment.append(
+                    enrichment
+                )
+
+                enriched_cves += 1
+
+            else:
+
+                enrichment_failures += 1
+
+        # -------------------------
         # Build processed article
         # -------------------------
 
         processed_article = {
             "title": title,
+
             "source": article.get(
                 "source",
                 "Unknown"
             ),
+
             "url": article.get(
                 "url",
                 ""
             ),
+
             "published": article.get(
                 "published",
                 ""
             ),
+
             "summary": summary,
 
             "iocs": validated_iocs,
@@ -128,6 +162,8 @@ def process_articles():
             "classified_indicators": (
                 classified_indicators
             ),
+
+            "cve_enrichment": cve_enrichment,
         }
 
         processed_articles.append(
@@ -185,6 +221,14 @@ def process_articles():
         print(
             f"  {context:32} : {count}"
         )
+
+    print("\nCVE enrichment:")
+    print(
+        f"  Enriched CVEs : {enriched_cves}"
+    )
+    print(
+        f"  Failed CVEs   : {enrichment_failures}"
+    )
 
     print("\n--------------------------------")
 
